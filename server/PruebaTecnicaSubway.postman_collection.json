@@ -1,0 +1,358 @@
+{
+	"info": {
+		"_postman_id": "fe446977-b8db-47ae-b17a-c240ed80c09f",
+		"name": "PruebaTecnicaSubway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43622286",
+		"_collection_link": "https://germansantos.postman.co/workspace/German-Santos's-Workspace~315a41eb-7199-40b7-812d-3de97043e098/collection/43622286-fe446977-b8db-47ae-b17a-c240ed80c09f?action=share&source=collection_link&creator=43622286"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "GetAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Producto 1\",\n  \"image\": \"exampleURL\",\n  \"price\": 20.0\n}\n"
+						},
+						"url": {
+							"raw": "{{devUrl}}/products",
+							"host": [
+								"{{devUrl}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Producto 1\",\n  \"image\": \"exampleURL\",\n  \"price\": 20.0\n}\n"
+						},
+						"url": {
+							"raw": "{{devUrl}}/products/3de16423-4c1a-4801-839c-af2d4577043c",
+							"host": [
+								"{{devUrl}}"
+							],
+							"path": [
+								"products",
+								"3de16423-4c1a-4801-839c-af2d4577043c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Manzanas\",\n  \"image\": \"https://www.bupasalud.com/sites/default/files/inline-images/fuji-red.jpg\",\n  \"price\": 40.0,\n  \"description\": \"Esta es la descripcion de la botella de agua\",\n  \"stock\": 150\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{devUrl}}/products",
+							"host": [
+								"{{devUrl}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"description\": \"Esta es la descripcion de la manzana\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{devUrl}}/products/8ede58dc-6183-4036-99a8-4435989f41ee",
+							"host": [
+								"{{devUrl}}"
+							],
+							"path": [
+								"products",
+								"8ede58dc-6183-4036-99a8-4435989f41ee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Producto 1 actualizado\",\n  \"image\": \"exampleURL2\",\n  \"price\": 37.0\n}\n"
+						},
+						"url": {
+							"raw": "{{devUrl}}/products/3de16423-4c1a-4801-839c-af2d4577043c",
+							"host": [
+								"{{devUrl}}"
+							],
+							"path": [
+								"products",
+								"3de16423-4c1a-4801-839c-af2d4577043c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "List",
+			"item": [
+				{
+					"name": "GetAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Producto 1\",\n  \"image\": \"exampleURL\",\n  \"price\": 20.0\n}\n"
+						},
+						"url": {
+							"raw": "{{devUrl}}/lists",
+							"host": [
+								"{{devUrl}}"
+							],
+							"path": [
+								"lists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Producto 1\",\n  \"image\": \"exampleURL\",\n  \"price\": 20.0\n}\n"
+						},
+						"url": {
+							"raw": "{{devUrl}}/lists/16f40bbd-16e7-4a41-9ef9-4c6e0b43c5ff",
+							"host": [
+								"{{devUrl}}"
+							],
+							"path": [
+								"lists",
+								"16f40bbd-16e7-4a41-9ef9-4c6e0b43c5ff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Test\",\n  \"total_sold\": 0\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{devUrl}}/lists",
+							"host": [
+								"{{devUrl}}"
+							],
+							"path": [
+								"lists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Producto 1 actualizado\",\n  \"image\": \"exampleURL2\",\n  \"price\": 37.0\n}\n"
+						},
+						"url": {
+							"raw": "{{devUrl}}/lists/90f4a99f-8e5a-4700-9560-ff5af26092c1",
+							"host": [
+								"{{devUrl}}"
+							],
+							"path": [
+								"lists",
+								"90f4a99f-8e5a-4700-9560-ff5af26092c1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ListDetails",
+			"item": [
+				{
+					"name": "GetAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Producto 1\",\n  \"image\": \"exampleURL\",\n  \"price\": 20.0\n}\n"
+						},
+						"url": {
+							"raw": "{{devUrl}}/listsDetails",
+							"host": [
+								"{{devUrl}}"
+							],
+							"path": [
+								"listsDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ids\":\n    [\n        \"d15fd039-0a72-4d2f-9daf-26f0e0918bd\"\n    ]\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{devUrl}}/listsDetails",
+							"host": [
+								"{{devUrl}}"
+							],
+							"path": [
+								"listsDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteRegisterByListAndProduct",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Producto 1 actualizado\",\n  \"image\": \"exampleURL2\",\n  \"price\": 37.0\n}\n"
+						},
+						"url": {
+							"raw": "{{devUrl}}/listsDetails/list/16f40bbd-16e7-4a41-9ef9-4c6e0b43c5ff/product/c1465dbd-dd51-4b44-8c5f-dc093059f1d3",
+							"host": [
+								"{{devUrl}}"
+							],
+							"path": [
+								"listsDetails",
+								"list",
+								"16f40bbd-16e7-4a41-9ef9-4c6e0b43c5ff",
+								"product",
+								"c1465dbd-dd51-4b44-8c5f-dc093059f1d3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
