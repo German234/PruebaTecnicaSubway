@@ -21,6 +21,7 @@ Sigue estos pasos para poner en marcha el frontend:
     ```bash
     cp .env.example .env
     ```
+    Tener en cuenta que la api URL debe terminar en /api
 
     Luego, edita `.env.local` y ajusta los valores según tu entorno.
 
